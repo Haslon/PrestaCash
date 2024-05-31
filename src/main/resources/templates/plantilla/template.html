@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrestaCash - Menu Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- creamos un fragmento para el menu -->
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" th:fragment="nav">
+            <div class=" container-fluid">
+            <a class="navbar-brand" href="#">Presta Cash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/menuprincipal}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tipoartefacto/mostrar}">Tipo de
+                            Artefacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/artefacto/mostrar}">Artefacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- creamos un fragmento para el footer -->
+        <footer th:fragment="footer">
+            <p>Sistema Web PrestaCash - Mario Antonio Huapalla Morales</p>
+        </footer>
+        <!-- Cerramos el fragmento -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
