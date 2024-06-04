@@ -16,39 +16,38 @@
                 <h1>Registro de Artefacto</h1>
             </div>
             <div class="card-body">
-                <form>
+                <form th:action="@{/artefacto/registrar}" method="post" th:object="${artefacto}">
                     <div class="mb-3 col-6">
                         <label for="txtNom" class="form-label">Nombre:</label>
                         <input type="text" class="form-control" id="txtNom" name="txtNom"
-                            placeholder="Ingrese el nombre">
+                            placeholder="Ingrese el nombre" th:field="*{nombre}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtDes" class="form-label">Descripcion:</label>
                         <textarea class="form-control" id="txtDes" name="txtDes" rows="3"
-                            placeholder="Ingresa la descripcion"></textarea>
+                            placeholder="Ingresa la descripcion" th:field="*{descripcion}"></textarea>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtCan" class="form-label">Cantidad:</label>
                         <input type="number" class="form-control" id="txtCan" name="txtCan"
-                            placeholder="Ingrese la cantidad">
+                            placeholder="Ingrese la cantidad" th:field="*{cantidad}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtPre" class="form-label">Precio:</label>
                         <input type="number" class="form-control" id="txtPre" name="txtPre"
-                            placeholder="Ingrese el precio">
+                            placeholder="Ingrese el precio" th:field="*{precio}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="cboTip" class="form-label">Tipo de Artefacto:</label>
-                        <select class="form-select" id="cboTip" name="cboTip" aria-label="Default select example">
+                        <select class="form-select" id="cboTip" name="cboTip" aria-label="Default select example" th:field="*{tipoartefacto}">
                             <option value="0">Seleccione un tipo</option>
-                            <option value="1">Instrumentos Musicales</option>
-                            <option value="2">Linea Blanca</option>
+                            <option th:each="tipoartefacto:${tipoartefactos}" th:value="${tipoartefacto.codigo}" th:text="${tipoartefacto.nombre}"></option>
                         </select>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtNom" class="form-label">Estado:</label>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst">
+                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst" th:field="*{estado}">
                             <label class="form-check-label" for="exampleCheck1">Habilitado</label>
                         </div>
                     </div>

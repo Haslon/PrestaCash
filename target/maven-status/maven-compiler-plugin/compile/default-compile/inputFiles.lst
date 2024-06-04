@@ -1,6 +1,7 @@
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\TipoArtefactoRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\model\ClienteEntity.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\PrestaCashApplication.java
+C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\controller\EmpleadoController.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\DistritoService.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\impl\AlmacenServiceImpl.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\ClienteService.java
@@ -13,12 +14,14 @@ C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\model\CargoEntity.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\AlmacenService.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\CargoService.java
+C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\controller\CargoController.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\base\BaseRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\ContratoService.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\impl\ClienteServiceImpl.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\model\TipoDocumentoEntity.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\ClienteRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\impl\TipoDocumentoServiceImpl.java
+C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\controller\TipoDocumentoController.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\impl\CargoServiceImpl.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\ArtefactoRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\impl\ArtefactoServiceImpl.java
@@ -40,5 +43,6 @@ C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\EmpleadoRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\service\ArtefactoService.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\DistritoRepository.java
+C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\controller\DistritoController.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\repository\CargoRepository.java
 C:\Users\User\Desktop\Java_Web\Laboratorio - 01\PrestaCash\src\main\java\pe\com\prestacash\model\EmpleadoEntity.java

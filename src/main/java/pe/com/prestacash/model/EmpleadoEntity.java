@@ -72,11 +72,11 @@ public class EmpleadoEntity extends BaseEntity implements Serializable {
     @NotEmpty
     @Size(min = 1, max = 1, message = "El sexo debe ser 'M' o 'F'")
     private String sexo;
-
+    
     @ManyToOne
     @JoinColumn(name = "cod_tipo_documento", nullable = false)
     private TipoDocumentoEntity tipodocumento;
-
+    
     @ManyToOne
     @JoinColumn(name = "cod_distrito", nullable = false)
     private DistritoEntity distrito;

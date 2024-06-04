@@ -17,18 +17,18 @@
                 <h1>Eliminacion de Tipo de Artefacto</h1>
             </div>
             <div class="card-body">
-                <form>
+                <form th:action="@{/tipoartefacto/eliminar/{id}(id=${tipoartefactos.codigo})}" method="post" th:object="${tipoartefactos}">
                     <div class="mb-3 col-6">
                         <label for="txtCod" class="form-label">Codigo:</label>
-                        <input type="text" class="form-control" id="txtCod" name="txtCod" readonly>
+                        <input type="text" class="form-control" id="txtCod" name="txtCod" readonly th:field="*{codigo}" th:value="${tipoartefactos.codigo}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtNom" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="txtNom" name="txtNom" readonly>
+                        <input type="text" class="form-control" id="txtNom" name="txtNom" readonly th:value="${tipoartefactos.nombre}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtEst" class="form-label">Estado:</label>
-                        <input type="text" class="form-control" id="txtEst" name="chkEst" readonly>
+                        <input type="text" class="form-control" id="txtEst" name="txtEst" readonly th:value="${tipoartefactos.estado} ? 'Habilitado':'Deshabilitado'">
                     </div>
                     <button type="submit" class="btn btn-danger">Eliminar</button>
                 </form>

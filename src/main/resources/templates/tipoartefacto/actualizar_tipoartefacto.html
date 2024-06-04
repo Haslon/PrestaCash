@@ -17,20 +17,20 @@
                 <h1>Actualizacion de Tipo de Artefacto</h1>
             </div>
             <div class="card-body">
-                <form>
+                <form th:action="@{/tipoartefacto/actualizar/{id}(id=${tipoartefactos.codigo})}" method="post" th:object="${tipoartefactos}">
                     <div class="mb-3 col-6">
                         <label for="txtCod" class="form-label">Codigo:</label>
-                        <input type="text" class="form-control" id="txtCod" name="txtCod" readonly>
+                        <input type="text" class="form-control" id="txtCod" name="txtCod" readonly th:field="*{codigo}" th:value="${tipoartefactos.codigo}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtNom" class="form-label">Nombre:</label>
                         <input type="text" class="form-control" id="txtNom" name="txtNom"
-                            placeholder="Ingrese el nombre">
+                            placeholder="Ingrese el nombre" th:field="*{nombre}" th:value="${tipoartefactos.nombre}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="txtNom" class="form-label">Estado:</label>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst">
+                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst" th:field="*{estado}">
                             <label class="form-check-label" for="exampleCheck1">Habilitado</label>
                         </div>
                     </div>
