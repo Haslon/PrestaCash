@@ -42,6 +42,7 @@ pe\com\prestacash\model\ContratoEntity.class
 pe\com\prestacash\service\impl\TipoArtefactoServiceImpl.class
 pe\com\prestacash\repository\CargoRepository.class
 pe\com\prestacash\repository\ContratoRepository.class
+pe\com\prestacash\controller\TipoDocumentoController.class
 pe\com\prestacash\controller\CargoController.class
 pe\com\prestacash\model\DistritoEntity.class
 pe\com\prestacash\service\ContratoService.class

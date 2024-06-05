@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PrestaCash - Mostrar Cliente</title>
+    <title>PrestaCash - Mostrar Empleado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-        <nav th:insert="template/template.html :: nav"></nav>
+        <nav th:insert="plantilla/template.html :: nav"></nav>
         <div class="card">
             <div class="card-header">
-                <h1>Listado de Clientes</h1>
+                <h1>Listado de Empleados</h1>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -54,25 +54,23 @@
                                 <td th:text="${empleado.correo}"></td>
                                 <td th:text="${empleado.sexo}"></td>
                                 <td th:text="${empleado.cargo}"></td>
-                                <!-- <td th:text="${empleado.distrito}"></td>
-                                <td th:text="${empleado.tipodocumento}"></td> 
+                                <td th:text="${empleado.distrito}"></td>
+                                <td th:text="${empleado.tipodocumento}"></td>
                                 <td th:text="${empleado.estado ? 'Habilitado':'Deshabilitado'}"></td>
-                                <td><a class="btn btn-success"
-                                        th:href="@{/cliente/actualizar/{id}(id=${empleado.codigo})}">Seleccionar</a></td>
-                                <td><a class="btn btn-danger"
-                                        th:href="@{/cliente/eliminar/{id}(id=${empleado.codigo})}">Seleccionar</a></td> -->
+                                <td><a class="btn btn-success" th:href="@{/empleado/actualizar/{id}(id=${empleado.codigo})}">Seleccionar</a></td>
+                                <td><a class="btn btn-danger" th:href="@{/cliente/eliminar/{id}(id=${empleado.codigo})}">Seleccionar</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="card-footer">
-                <a th:href="@{/cliente/registrar}" class="btn btn-primary">Registrar Cliente</a>
+                <a th:href="@{/empleado/registrar}" class="btn btn-primary">Registrar Empleado</a>
             </div>
         </div>
-        <footer th:insert="template/template.html :: footer"></footer>
+        <footer th:insert="plantilla/template.html :: footer"></footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>

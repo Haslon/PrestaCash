@@ -1,100 +1,111 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PrestaCash - Actualizar Cliente</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5bNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>PrestaCash - Actualizar Empleado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
+        <nav th:insert="plantilla/template.html :: nav"></nav>
         <div class="card">
             <div class="card-header">
-                <h1>Actualizar Cliente</h1>
+                <h1>Actualizar Empleado</h1>
             </div>
             <div class="card-body">
-                <form th:action="@{/cliente/actualizar}" th:object="${cliente}" method="post">
-                    <input type="hidden" th:field="*{codigo}">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" th:field="*{nombre}" placeholder="Ingrese el nombre" required>
+                <form th:action="@{/empleado/actualizar/{id}(id=${empleado.codigo})}" method="post" th:object="${empleado}">
+                    <input type="hidden" th:name="_method" value="put" />
+                    <div class="mb-3 col-6">
+                        <label for="txtCod" class="form-label">Codigo:</label>
+                        <input type="text" class="form-control" id="txtCod" name="txtCod" readonly th:field="*{codigo}" th:value="${empleado.codigo}" >
                     </div>
-                    <div class="mb-3">
-                        <label for="apellidopaterno" class="form-label">Apellido Paterno</label>
-                        <input type="text" class="form-control" id="apellidopaterno" th:field="*{apellidopaterno}" placeholder="Ingrese el apellido paterno" required>
+                    <div class="mb-3 col-6">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" th:field="*{nombre}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="apellidomaterno" class="form-label">Apellido Materno</label>
-                        <input type="text" class="form-control" id="apellidomaterno" th:field="*{apellidomaterno}" placeholder="Ingrese el apellido materno" required>
+                    <div class="mb-3 col-6">
+                        <label for="apellidopaterno" class="form-label">Apellido Paterno:</label>
+                        <input type="text" class="form-control" id="apellidopaterno" name="apellidopaterno" placeholder="Ingrese el apellido paterno" th:field="*{apellidopaterno}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="numerodocumento" class="form-label">Número de Documento</label>
-                        <input type="text" class="form-control" id="numerodocumento" th:field="*{numerodocumento}" placeholder="Ingrese el número de documento" required>
+                    <div class="mb-3 col-6">
+                        <label for="apellidomaterno" class="form-label">Apellido Materno:</label>
+                        <input type="text" class="form-control" id="apellidomaterno" name="apellidomaterno" placeholder="Ingrese el apellido materno" th:field="*{apellidomaterno}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="fechanacimiento" class="form-label">Fecha de Nacimiento</label>
-                        <input type="date" class="form-control" id="fechanacimiento" th:field="*{fechanacimiento}" required>
+                    <div class="mb-3 col-6">
+                        <label for="numerodocumento" class="form-label">Número de Documento:</label>
+                        <input type="text" class="form-control" id="numerodocumento" name="numerodocumento" placeholder="Ingrese el número de documento" th:field="*{numerodocumento}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="direccion" th:field="*{direccion}" placeholder="Ingrese la dirección" required>
+                    <div class="mb-3 col-6">
+                        <label for="fechanacimiento" class="form-label">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="fechanacimiento" name="fechanacimiento" th:field="*{fechanacimiento}" required pattern="\d{4}-\d{2}-\d{2}">
                     </div>
-                    <div class="mb-3">
-                        <label for="telefono" class="form-label">Teléfono</label>
-                        <input type="text" class="form-control" id="telefono" th:field="*{telefono}" placeholder="Ingrese el teléfono">
+                    <div class="mb-3 col-6">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese la dirección" th:field="*{direccion}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="celular" class="form-label">Celular</label>
-                        <input type="text" class="form-control" id="celular" th:field="*{celular}" placeholder="Ingrese el celular" required>
+                    <div class="mb-3 col-6">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese el teléfono" th:field="*{telefono}">
                     </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="correo" th:field="*{correo}" placeholder="Ingrese el correo" required>
+                    <div class="mb-3 col-6">
+                        <label for="celular" class="form-label">Celular:</label>
+                        <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingrese el celular" th:field="*{celular}" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="sexo" class="form-label">Sexo</label>
-                        <select class="form-select" id="sexo" th:field="*{sexo}" required>
-                            <option value="M" th:selected="${cliente.sexo == 'M'}">Masculino</option>
-                            <option value="F" th:selected="${cliente.sexo == 'F'}">Femenino</option>
+                    <div class="mb-3 col-6">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese el correo" th:field="*{correo}" required>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="sexo" class="form-label">Sexo:</label>
+                        <select class="form-select" id="sexo" name="sexo" th:field="*{sexo}" required>
+                            <option value="0">Seleccione</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="cargo" class="form-label">Cargo</label>
-                        <select class="form-select" id="cargo" name="cargo" required>
-                            <option value="Cargo">Cargo</option>
-                            <option value="Asistente">Asistente de empeño</option>
-                            <option value="Tasador">Tasador</option>
-                            <option value="Cajero">Cajero</option>
-                            <option value="Admin">Administrador</option>
+                    <div class="mb-3 col-6">
+                        <label for="cargo" class="form-label">Cargo:</label>
+                        <select class="form-select" id="cargo" name="cargo" th:field="*{cargo}" required>
+                            <option value="0">Seleccione un Cargo</option>
+                            <option th:each="cargo : ${cargos}" th:value="${cargo.codigo}" th:text="${cargo.nombre}"></option>
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="tipodocumento" class="form-label">Tipo de Documento</label>
-                        <select class="form-select" id="tipodocumento" th:field="*{tipodocumento.codigo}" required>
-                            <option th:each="tipo : ${tiposDocumento}" th:value="${tipo.codigo}" th:text="${tipo.nombre}" th:selected="${tipo.codigo == cliente.tipodocumento.codigo}">DNI</option>
-                            <option th:each="tipo : ${tiposDocumento}" th:value="${tipo.codigo}" th:text="${tipo.nombre}" th:selected="${tipo.codigo == cliente.tipodocumento.codigo}">Carnet Extranjería</option>
-                            <option th:each="tipo : ${tiposDocumento}" th:value="${tipo.codigo}" th:text="${tipo.nombre}" th:selected="${tipo.codigo == cliente.tipodocumento.codigo}">Pasaporte</option>
-                        
+                    <div class="mb-3 col-6">
+                        <label for="tipodocumento" class="form-label">Tipo de Documento:</label>
+                        <select class="form-select" id="tipodocumento" name="tipodocumento" th:field="*{tipodocumento}" required>
+                            <option value="0">Seleccione un tipo</option>
+                            <option th:each="tipodocumento : ${tipodocumentos}" th:value="${tipodocumento.codigo}" th:text="${tipodocumento.nombre}"></option>
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="distrito" class="form-label">Distrito</label>
-                        <select class="form-select" id="distrito" th:field="*{distrito.codigo}" required>
-                            <option th:each="distrito : ${distritos}" th:value="${distrito.codigo}" th:text="${distrito.nombre}" th:selected="${distrito.codigo == cliente.distrito.codigo}">Lima</option>
+                    <div class="mb-3 col-6">
+                        <label for="distrito" class="form-label">Distrito:</label>
+                        <select class="form-select" id="distrito" name="distrito" th:field="*{distrito}" required>
+                            <option value="0">Seleccione un distrito</option>
+                            <option th:each="distrito : ${distritos}" th:value="${distrito.codigo}" th:text="${distrito.nombre}"></option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Actualizar Cliente</button>
-                    <a th:href="@{/cliente/listar}" class="btn btn-secondary">Cancelar</a>
+                    <div class="mb-3 col-6">
+                        <label for="txtNom" class="form-label">Estado:</label>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst" th:field="*{estado}">
+                            <label class="form-check-label" for="exampleCheck1">Habilitado</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar Empleado</button>
                 </form>
             </div>
+            <div class="card-footer">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                </div>
+            </div>
         </div>
-        <footer th:insert="template/template.html :: footer"></footer>
+        <footer th:insert="plantilla/template.html :: footer"></footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

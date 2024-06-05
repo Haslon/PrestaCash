@@ -11,3 +11,4 @@ public interface EmpleadoRepository extends BaseRepository<EmpleadoEntity, Long>
     List<EmpleadoEntity> findAllCustom();
 
 }
+
