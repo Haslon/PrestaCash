@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -46,9 +47,9 @@ public class EmpleadoEntity extends BaseEntity implements Serializable {
     @Size(min = 8, max = 15, message = "El número de documento tiene que estar entre {min} y {max} caracteres")
     private String numerodocumento;
 
+    
     @Column(name = "fecha_empleado")
-    @Temporal(TemporalType.DATE)
-    private Date fechanacimiento;
+    private LocalDate fechanacimiento;
 
     @Column(name = "dire_empleado")
     @NotEmpty
