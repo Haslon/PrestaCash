@@ -57,16 +57,14 @@
                                 <td th:text="${empleado.distrito}"></td>
                                 <td th:text="${empleado.tipodocumento}"></td>
                                 <td th:text="${empleado.estado ? 'Habilitado':'Deshabilitado'}"></td>
-                                <td><a class="btn btn-success" th:href="@{/empleado/actualizar/{id}(id=${empleado.codigo})}">Seleccionar</a></td>
-                                <td><a class="btn btn-danger" th:href="@{/empleado/eliminar/{id}(id=${empleado.codigo})}">Seleccionar</a></td>
+                                <td><a class="btn btn-success" th:href="@{/empleado/habilitar/{id}(id=${empleado.codigo})}">Habilitar</a></td>
+                                <td><a class="btn btn-danger" th:href="@{/empleado/deshabilitar/{id}(id=${empleado.codigo})}">Deshabilitar</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="card-footer">
-                <a th:href="@{/empleado/registrar}" class="btn btn-primary">Registrar Empleado</a>
-                <a th:href="@{/empleado/mostrartodo}" class="btn btn-warning">Habilitar Empleado</a>
             </div>
         </div>
         <footer th:insert="plantilla/template.html :: footer"></footer>

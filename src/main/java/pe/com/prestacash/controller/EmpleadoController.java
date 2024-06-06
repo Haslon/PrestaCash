@@ -36,6 +36,14 @@ public class EmpleadoController {
         model.addAttribute("empleados", empleadoService.findAllCustom());
         return "empleado/mostrar_empleado";
     }
+    
+    @GetMapping("/empleado/mostrartodo")
+    public String MostrarEmpleadoTodo(Model modelo) {
+        modelo.addAttribute("empleados",
+                empleadoService.findAll());
+        return "empleado/habilitar_empleado";
+    }
+    
 
     @GetMapping("/empleado/registrar")
     public String mostrarRegistrarEmpleado(Model model) {
@@ -50,15 +58,19 @@ public class EmpleadoController {
         model.addAttribute("distritos", distritoService.findAllCustom());
         model.addAttribute("tipodocumentos", tipoDocumentoService.findAllCustom());
         model.addAttribute("cargos", cargoService.findAllCustom());
-        model.addAttribute("artefactos", empleadoService.findById(id).get());
+        model.addAttribute("empleados", empleadoService.findById(id).get());
         return "empleado/actualizar_empleado";
     }
 
     @GetMapping("/empleado/eliminar/{id}")
-    public String MostrarEliminarEmpleado(@PathVariable Long id) {
-        EmpleadoEntity objartefacto = empleadoService.findById(id).get();
-        empleadoService.delete(objartefacto);
-        return "redirect:/empleado/mostrar";
+    public String MostrarEliminarEmpleado(@PathVariable Long id,
+            Model modelo) {
+        modelo.addAttribute("distritos", distritoService.findAllCustom());
+        modelo.addAttribute("tipodocumentos", tipoDocumentoService.findAllCustom());
+        modelo.addAttribute("cargos", cargoService.findAllCustom());
+        modelo.addAttribute("empleados",
+                empleadoService.findById(id).get());
+        return "empleado/eliminar_empleado";
     }
 
     // modelo
@@ -74,15 +86,30 @@ public class EmpleadoController {
     }
 
     @PostMapping("/empleado/actualizar/{id}")
-    public String ActualizarEmpleado(@PathVariable Long id,
-            @ModelAttribute("empleado") EmpleadoEntity empleado,
-            @ModelAttribute("distritos") EmpleadoEntity distrito,
-            @ModelAttribute("tipodocumentos") EmpleadoEntity tipoDocumento,
-            @ModelAttribute("cargos") EmpleadoEntity cargo) {
-
-        empleadoService.update(empleado);
-
+    public String MostrarActualizarEmpleado(@PathVariable Long id,
+            @ModelAttribute("empleado") EmpleadoEntity a) {
+        empleadoService.update(a);
         return "redirect:/empleado/mostrar";
     }
 
+    @PostMapping("/empleado/eliminar/{id}")
+    public String EliminarEmpleado(@PathVariable Long id,
+            @ModelAttribute("empleado") EmpleadoEntity a) {
+        empleadoService.delete(a);
+        return "redirect:/empleado/mostrar";
+    }
+
+    @GetMapping("/empleado/habilitar/{id}")
+    public String HabilitarRol(@PathVariable Long id) {
+        EmpleadoEntity objempleado = empleadoService.findById(id).get();
+        empleadoService.enable(objempleado);
+        return "redirect:/empleado/mostrar";
+    }
+
+    @GetMapping("/empleado/deshabilitar/{id}")
+    public String DeshabilitarRol(@PathVariable Long id) {
+        EmpleadoEntity objempleado = empleadoService.findById(id).get();
+        empleadoService.delete(objempleado);
+        return "redirect:/empleado/mostrar";
+    }
 }
