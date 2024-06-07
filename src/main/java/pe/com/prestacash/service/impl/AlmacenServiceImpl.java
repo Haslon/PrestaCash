@@ -37,21 +37,21 @@ public class AlmacenServiceImpl implements AlmacenService {
 
     @Override
     public AlmacenEntity update(AlmacenEntity t) {
-        AlmacenEntity obj = repositorio.getById(t.getCodigoalm());
+        AlmacenEntity obj = repositorio.getById(t.getCodigo());
         BeanUtils.copyProperties(t, obj);
         return repositorio.save(obj);
     }
 
     @Override
     public AlmacenEntity delete(AlmacenEntity t) {
-        AlmacenEntity obj = repositorio.getById(t.getCodigoalm());
+        AlmacenEntity obj = repositorio.getById(t.getCodigo());
         obj.setEstado(false);
         return repositorio.save(obj);
     }
 
     @Override
     public AlmacenEntity enable(AlmacenEntity t) {
-        AlmacenEntity obj = repositorio.getById(t.getCodigoalm());
+        AlmacenEntity obj = repositorio.getById(t.getCodigo());
         obj.setEstado(true);
         return repositorio.save(obj);
     }

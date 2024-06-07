@@ -21,7 +21,7 @@ public class AlmacenEntity extends BaseEntity implements Serializable {
     @Id
     @Column(name = "cod_almacen")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long codigoalm;
+    private long codigo;
 
     @Column(name = "fecha_ingreso")
     @Temporal(TemporalType.DATE)

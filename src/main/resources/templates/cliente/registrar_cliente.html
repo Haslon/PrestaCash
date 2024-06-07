@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card" th:insert="plantilla/template.html :: nav">
             <div class="card-header">
                 <h1>Registrar Cliente</h1>
             </div>
@@ -76,7 +76,7 @@
                 </form>
             </div>
         </div>
-        <footer th:insert="template/template.html :: footer"></footer>
+        <footer th:insert="plantilla/template.html :: footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
