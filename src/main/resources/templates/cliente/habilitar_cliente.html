@@ -35,8 +35,8 @@
                             <th scope="col">Correo</th>
                             <th scope="col">Sexo</th>
                             <th scope="col">Estado</th>
-                            <th scope="col">Actualizar</th>
-                            <th scope="col">Eliminar</th>
+                            <th scope="col">Habilitar</th>
+                            <th scope="col">Deshabilitar</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -55,17 +55,13 @@
                             <td th:text="${cliente.correo}"></td>
                             <td th:text="${cliente.sexo}"></td>
                             <td th:text="${cliente.estado ? 'Habilitado' : 'Deshabilitado'}"></td>
-                            <td><a class="btn btn-success" th:href="@{/cliente/actualizar/{id}(id=${cliente.codigo})}">Seleccionar</a></td>
-                            <td><a class="btn btn-danger" th:href="@{/cliente/eliminar/{id}(id=${cliente.codigo})}">Seleccionar</a></td>
+                            <td><a class="btn btn-warning" th:href="@{/cliente/habilitar/{id}(id=${cliente.codigo})}">Seleccionar</a></td>
+                            <td><a class="btn btn-danger" th:href="@{/cliente/deshabilitar/{id}(id=${cliente.codigo})}">Seleccionar</a></td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="card-footer">
-                <a th:href="@{/cliente/registrar}" class="btn btn-primary">Registrar cliente</a>
-                <a th:href="@{/cliente/mostrartodo}" class="btn btn-warning">Habilitar cliente</a>
-</div>
           
         </div>
         <footer th:insert="plantilla/template.html :: footer"></footer>

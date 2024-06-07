@@ -1,22 +1,27 @@
-<!doctype html>
-<html lang="es">
+<!doctype html >
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PrestaCash - Actualizar Almacen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
+        <nav th:insert="plantilla/template.html :: nav"></nav>
         <div class="card">
             <div class="card-header">
                 <h1>Actualizar Almacen</h1>
             </div>
             <div class="card-body">
-                <form th:action="@{/almacen/actualizar/{id}(id=${almacen.codigolm})}" method="post">
+                <form th:action="@{/almacen/actualizar/{id}(id=${almacen.codigoalm})}" method="post" th:object="${almacen}">
+                    <div class="mb-3 col-6">
+                        <label for="codigo" class="form-label">Codigo:</label>
+                        <input type="text" class="form-control" id="codigo" name="codigo" readonly th:field="*{codigoalm}" th:value="${almacen.codigoalm}" >
+                    </div>
                     <div class="mb-3 col-6">
                         <label for="fechaIngreso" class="form-label">Fecha Ingreso:</label>
                         <input type="date" class="form-control" id="fechaIngreso" name="fechaIngreso" th:value="${almacen.fechaIngreso}">
@@ -27,15 +32,23 @@
                     </div>
                     <div class="mb-3 col-6">
                         <label for="artefacto" class="form-label">Artefacto:</label>
-                        <select class="form-select" id="artefacto" name="artefacto">
-                            <option th:each="artefacto : ${artefactos}" th:value="${artefacto.id}" th:text="${artefacto.nombre}" th:selected="${artefacto.id == almacen.artefacto.id}"></option>
+                        <select class="form-select" id="almacen" name="almacen" th:field="*{artefacto}">
+                            <option th:each="artefacto : ${artefactos}" th:value="${artefacto.codigo}" 
+                            th:text="${artefacto.nombre}"></option>
                         </select>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="txtNom" class="form-label">Estado:</label>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst" th:field="*{estado}">
+                            <label class="form-check-label" for="exampleCheck1">Habilitado</label>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-success">Actualizar Almacen</button>
                 </form>
             </div>
         </div>
-        <footer th:insert="template/template.html :: footer"></footer>
+        <footer th:insert="plantilla/template.html :: footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
