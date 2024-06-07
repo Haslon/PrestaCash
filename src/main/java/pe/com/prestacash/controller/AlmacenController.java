@@ -18,7 +18,7 @@ public class AlmacenController {
     @Autowired
     private ArtefactoService servicioartefacto;
     
-    @GetMapping("/almacen/mostrar/custom")
+    @GetMapping("/almacen/mostrar")
     public String MostrarAlmacen(Model modelo) {
         modelo.addAttribute("almacen",
                 servicio.findAllCustom());

@@ -22,7 +22,7 @@ public class ClienteController {
     @Autowired
     private DistritoService distritoService;
 
-    @GetMapping("/cliente/mostrar/custom")
+    @GetMapping("/cliente/mostrar")
     public String MostrarClientes(Model modelo) {
         modelo.addAttribute("clientes", clienteService.findAllCustom());
         return "cliente/mostrar_cliente";
