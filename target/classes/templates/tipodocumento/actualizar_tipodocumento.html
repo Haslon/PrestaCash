@@ -17,7 +17,7 @@
                 <h1>Actualizacion de Tipo de Documento</h1>
             </div>
             <div class="card-body">
-                <form th:action="@{/tipodocumento/actualizar/{id}(id=${tipoartefactos.codigo})}" method="post" th:object="${tipodocumentos}">
+                <form th:action="@{/tipodocumento/actualizar/{id}(id=${tipodocumentos.codigo})}" method="post" th:object="${tipodocumentos}">
                     <div class="mb-3 col-6">
                         <label for="txtCod" class="form-label">Codigo:</label>
                         <input type="text" class="form-control" id="txtCod" name="txtCod" readonly th:field="*{codigo}" th:value="${tipodocumentos.codigo}">

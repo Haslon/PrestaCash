@@ -16,7 +16,7 @@
                 <h1>Actualizar Empleado</h1>
             </div>
             <div class="card-body">
-                <form th:action="@{/empleado/actualizar/{id}(id=${empleado.codigo})}" method="post" th:object="${empleado}">
+                <form th:action="@{/empleado/actualizar/{id}(id=${empleado.codigo})}" method="post" th:object="${empleados}">
                     <input type="hidden" th:name="_method" value="put" />
                     <div class="mb-3 col-6">
                         <label for="txtCod" class="form-label">Codigo:</label>
@@ -24,47 +24,45 @@
                     </div>
                     <div class="mb-3 col-6">
                         <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" th:field="*{nombre}" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre"  th:field="*{nombre}" th:value="${empleados.nombre}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="apellidopaterno" class="form-label">Apellido Paterno:</label>
-                        <input type="text" class="form-control" id="apellidopaterno" name="apellidopaterno" placeholder="Ingrese el apellido paterno" th:field="*{apellidopaterno}" required>
+                        <input type="text" class="form-control" id="apellidopaterno" name="apellidopaterno"  th:field="*{apellidopaterno}" th:value="${empleados.apellidopaterno}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="apellidomaterno" class="form-label">Apellido Materno:</label>
-                        <input type="text" class="form-control" id="apellidomaterno" name="apellidomaterno" placeholder="Ingrese el apellido materno" th:field="*{apellidomaterno}" required>
+                        <input type="text" class="form-control" id="apellidomaterno" name="apellidomaterno"  th:field="*{apellidomaterno}" th:value="${empleados.apellidomaterno}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="numerodocumento" class="form-label">Número de Documento:</label>
-                        <input type="text" class="form-control" id="numerodocumento" name="numerodocumento" placeholder="Ingrese el número de documento" th:field="*{numerodocumento}" required>
+                        <input type="text" class="form-control" id="numerodocumento" name="numerodocumento"  th:field="*{numerodocumento}" th:value="${empleados.numerodocumento}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="fechanacimiento" class="form-label">Fecha de Nacimiento:</label>
-                        <input type="date" class="form-control" id="fechanacimiento" name="fechanacimiento" th:field="*{fechanacimiento}" required pattern="\d{4}-\d{2}-\d{2}">
+                        <input type="text" class="form-control" id="fechanacimiento" name="fechanacimiento" th:field="*{fechanacimiento}" th:value="${empleados.fechanacimiento}" required pattern="\d{4}-\d{2}-\d{2}">
                     </div>
                     <div class="mb-3 col-6">
                         <label for="direccion" class="form-label">Dirección:</label>
-                        <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese la dirección" th:field="*{direccion}" required>
+                        <input type="text" class="form-control" id="direccion" name="direccion"  th:field="*{direccion}" th:value="${empleados.direccion}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="telefono" class="form-label">Teléfono:</label>
-                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese el teléfono" th:field="*{telefono}">
+                        <input type="text" class="form-control" id="telefono" name="telefono"  th:field="*{telefono}" th:value="${empleados.telefono}" >
                     </div>
                     <div class="mb-3 col-6">
                         <label for="celular" class="form-label">Celular:</label>
-                        <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingrese el celular" th:field="*{celular}" required>
+                        <input type="text" class="form-control" id="celular" name="celular"  th:field="*{celular}" th:value="${empleados.celular}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="correo" class="form-label">Correo:</label>
-                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese el correo" th:field="*{correo}" required>
+                        <input type="email" class="form-control" id="correo" name="correo"  th:field="*{correo}" th:value="${empleados.correo}" required>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="sexo" class="form-label">Sexo:</label>
-                        <select class="form-select" id="sexo" name="sexo" th:field="*{sexo}" required>
-                            <option value="0">Seleccione</option>
-                            <option value="M">Masculino</option>
-                            <option value="F">Femenino</option>
-                        </select>
+                        <input type="text" class="form-control" id="sexo" name="sexo" th:field="*{sexo}" th:value="${empleados.sexo}" required>
+                            
+                        </input>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="cargo" class="form-label">Cargo:</label>
