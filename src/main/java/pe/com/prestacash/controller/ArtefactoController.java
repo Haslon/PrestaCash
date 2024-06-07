@@ -1,3 +1,4 @@
+
 package pe.com.prestacash.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,7 @@ public class ArtefactoController {
     }
 
     @PostMapping("/artefacto/registrar")
-    public String RegistrarTipoArtefacto(
+    public String RegistrarArtefacto(
             @ModelAttribute("artefacto") ArtefactoEntity a) {
         servicio.add(a);
         return "redirect:/artefacto/mostrar";

@@ -32,6 +32,7 @@ pe\com\prestacash\repository\base\BaseRepository.class
 pe\com\prestacash\service\base\BaseService.class
 pe\com\prestacash\model\EmpleadoEntity.class
 pe\com\prestacash\model\CargoEntity$CargoEntityBuilder.class
+pe\com\prestacash\controller\AlmacenController.class
 pe\com\prestacash\model\TipoArtefactoEntity.class
 pe\com\prestacash\service\impl\CargoServiceImpl.class
 pe\com\prestacash\service\TipoArtefactoService.class
@@ -46,6 +47,7 @@ pe\com\prestacash\controller\CargoController.class
 pe\com\prestacash\model\DistritoEntity.class
 pe\com\prestacash\service\ContratoService.class
 pe\com\prestacash\model\AlmacenEntity$AlmacenEntityBuilder.class
+pe\com\prestacash\controller\ContratoController.class
 pe\com\prestacash\model\ClienteEntity.class
 pe\com\prestacash\config\WebConfig.class
 pe\com\prestacash\service\ClienteService.class
@@ -57,6 +59,7 @@ pe\com\prestacash\model\CargoEntity.class
 pe\com\prestacash\service\AlmacenService.class
 pe\com\prestacash\service\ArtefactoService.class
 pe\com\prestacash\service\impl\DistritoServiceImpl.class
+pe\com\prestacash\controller\ClienteController.class
 pe\com\prestacash\model\EmpleadoEntity$EmpleadoEntityBuilder.class
 pe\com\prestacash\controller\ArtefactoController.class
 pe\com\prestacash\model\TipoDocumentoEntity$TipoDocumentoEntityBuilder.class

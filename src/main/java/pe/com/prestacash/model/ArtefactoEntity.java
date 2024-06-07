@@ -28,6 +28,7 @@ public class ArtefactoEntity extends BaseEntity implements Serializable {
     @Id
     @Column(name = "cod_artefacto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private long codigo;
     @Column(name = "nom_artefacto")
     @NotEmpty
@@ -43,6 +44,7 @@ public class ArtefactoEntity extends BaseEntity implements Serializable {
     @Column(name = "precio_artefacto")
     @NotEmpty
     private double precio;
+    
     @ManyToOne
     @JoinColumn(name = "cod_tipo_artefacto", nullable = false)
     private TipoArtefactoEntity tipoartefacto;

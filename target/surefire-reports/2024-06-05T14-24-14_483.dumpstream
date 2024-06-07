@@ -1,0 +1,5 @@
+# Created at 2024-06-05T14:24:14.946
+Boot Manifest-JAR contains absolute paths in classpath 'I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
