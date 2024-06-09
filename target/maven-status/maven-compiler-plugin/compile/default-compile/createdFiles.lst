@@ -47,6 +47,7 @@ pe\com\prestacash\controller\CargoController.class
 pe\com\prestacash\model\DistritoEntity.class
 pe\com\prestacash\service\ContratoService.class
 pe\com\prestacash\model\AlmacenEntity$AlmacenEntityBuilder.class
+pe\com\prestacash\controller\ContratoController.class
 pe\com\prestacash\model\ClienteEntity.class
 pe\com\prestacash\config\WebConfig.class
 pe\com\prestacash\service\ClienteService.class
