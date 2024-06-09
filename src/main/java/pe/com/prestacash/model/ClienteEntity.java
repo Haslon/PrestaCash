@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.Date;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.springframework.format.annotation.DateTimeFormat;
 import pe.com.prestacash.model.base.BaseEntity;
 
 @SuperBuilder

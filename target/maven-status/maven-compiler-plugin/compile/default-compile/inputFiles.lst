@@ -17,6 +17,7 @@ C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\co
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\model\TipoDocumentoEntity.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\service\impl\EmpleadoServiceImpl.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\repository\TipoArtefactoRepository.java
+C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\controller\AlmacenController.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\model\DistritoEntity.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\model\ContratoEntity.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\service\EmpleadoService.java
@@ -28,6 +29,7 @@ C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\re
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\model\TipoArtefactoEntity.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\controller\ArtefactoController.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\controller\CargoController.java
+C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\controller\ClienteController.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\model\base\BaseEntity.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\repository\TipoDocumentoRepository.java
 C:\Users\Lenovo\Documents\JAVA-WEB\PrestaCash\src\main\java\pe\com\prestacash\service\TipoArtefactoService.java
