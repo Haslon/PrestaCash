@@ -15,8 +15,7 @@
     <nav th:insert="plantilla/template.html :: nav"></nav>
     <div class="card">
       <div class="card-header">
-
-        <h1>Listado de Contratos</h1>
+        <h1>Habilitar Contratos</h1>
       </div>
       <div class="card-body">
         <div class="table-responsive">
@@ -29,8 +28,8 @@
                 <th scope="col">Codigo Cliente</th>
                 <th scope="col">Codigo empleado</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Actualizar</th>
-                <th scope="col">Eliminar</th>
+                <th scope="col">Habilitar</th>
+                <th scope="col">Deshabilitar</th>
               </tr>
             </thead>
             <tbody>
@@ -41,10 +40,10 @@
                 <td th:text="${contrato.cliente.codigo}"></td>
                 <td th:text="${contrato.empleado.codigo}"></td>
                 <td th:text="${contrato.estado ? 'Habilitado':'Deshabilitado'}"></td>
-                <td><a th:href="@{/contrato/actualizar/{id}(id=${contrato.codigo})}"
-                    class="btn btn-success">Seleccionar</a>
+                <td><a th:href="@{/contrato/habilitar/{id}(id=${contrato.codigo})}"
+                    class="btn btn-warning">Seleccionar</a>
                 </td>
-                <td><a th:href="@{/contrato/eliminar/{id}(id=${contrato.codigo})}"
+                <td><a th:href="@{/contrato/deshabilitar/{id}(id=${contrato.codigo})}"
                     class="btn btn-danger">Seleccionar</a></td>
 
               </tr>
@@ -53,11 +52,6 @@
             </tbody>
           </table>
         </div>
-      </div>
-      <div class="card-footer">
-        <a th:href="@{/contrato/registrar}" class="btn btn-primary">Registrar contrato</a>
-        <a th:href="@{/contrato/habilitar}" class="btn btn-warning">Habilitar Contrato</a>
-
       </div>
     </div>
 

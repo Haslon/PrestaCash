@@ -49,6 +49,7 @@ public class ClienteEntity extends BaseEntity implements Serializable {
 
     @Column(name = "fecha_cliente")
     @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechanacimiento;
 
     @Column(name = "dire_cliente")
@@ -82,4 +83,3 @@ public class ClienteEntity extends BaseEntity implements Serializable {
     @JoinColumn(name = "cod_distrito", nullable = false)
     private DistritoEntity distrito;
 }
-

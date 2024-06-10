@@ -44,11 +44,12 @@
                         </select>
                     </div>
                     <div class="mb-3 col-6">
-                        <label for="empleado" class="form-label">Cliente:</label>
-                        <select class="form-select" id="empleado" name="empleado" th:field="*{empleado}" required>
+                        <label for="cliente" class="form-label">Cliente:</label>
+                        <select class="form-select" id="cliente" name="cliente" th:field="*{cliente}" required>
                             <option value="0">Seleccione un cliente</option>
                             <option th:each="cliente : ${clientes}" th:value="${cliente.codigo}"
-                                th:text="${cliente.nombre}"></option>
+                                th:text="${cliente.nombre}">
+                            </option>
                         </select>
                     </div>
 
