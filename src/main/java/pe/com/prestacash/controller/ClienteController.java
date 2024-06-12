@@ -44,7 +44,7 @@ public class ClienteController {
     @PostMapping("/cliente/registrar")
     public String RegistrarCliente(@ModelAttribute("cliente") ClienteEntity clienteEntity) {
         clienteService.add(clienteEntity);
-        return "redirect:/cliente/mostrar/custom";
+        return "redirect:/cliente/mostrar";
     }
 
     @GetMapping("/cliente/actualizar/{id}")
@@ -58,7 +58,7 @@ public class ClienteController {
     @PostMapping("/cliente/actualizar/{id}")
     public String ActualizarCliente(@PathVariable Long id, @ModelAttribute("cliente") ClienteEntity ce) {
         clienteService.update(ce);
-        return "redirect:/cliente/mostrar/custom";
+        return "redirect:/cliente/mostrar";
     }
 
     @GetMapping("/cliente/eliminar/{id}")
@@ -72,7 +72,7 @@ public class ClienteController {
     @PostMapping("/cliente/eliminar/{id}")
     public String EliminarCliente(@PathVariable Long id, @ModelAttribute("cliente") ClienteEntity clienteEntity) {
         clienteService.delete(clienteEntity);
-        return "redirect:/cliente/mostrar/custom";
+        return "redirect:/cliente/mostrar";
     }
 
     @ModelAttribute("cliente")
@@ -84,13 +84,13 @@ public class ClienteController {
     public String HabilitarCliente(@PathVariable Long id) {
         ClienteEntity clienteEntity = clienteService.findById(id).get();
         clienteService.enable(clienteEntity);
-        return "redirect:/cliente/mostrar/custom";
+        return "redirect:/cliente/mostrar";
     }
 
     @GetMapping("/cliente/deshabilitar/{id}")
     public String DeshabilitarCliente(@PathVariable Long id) {
         ClienteEntity clienteEntity = clienteService.findById(id).get();
         clienteService.delete(clienteEntity);
-        return "redirect:/cliente/mostrar/custom";
+        return "redirect:/cliente/mostrar";
     }
 }

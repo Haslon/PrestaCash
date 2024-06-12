@@ -14,7 +14,7 @@
     <nav th:insert="plantilla/template.html :: nav"></nav>
     <div class="card">
       <div class="card-header">
-        <h1>Eliminar Artefacto</h1>
+        <h1>Eliminar Contrato</h1>
       </div>
       <div class="card-body">
         <form th:action="@{/contrato/eliminar/{id}(id=${contrato.codigo})}" method="post" th:object="${contrato}">
@@ -51,7 +51,8 @@
           <div class="mb-3 col-6">
             <label for="txtEst" class="form-label">Estado:</label>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst">
+              <input type="checkbox" class="form-check-input" id="chkEst" name="chkEst" th:field="*{estado}"
+                th:value="${contrato.estado}">
               <label class="form-check-label" for="exampleCheck1" th:field="*{estado}"
                 th:checked="${contrato.estado}">Habilitado</label>
             </div>
