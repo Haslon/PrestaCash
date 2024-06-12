@@ -44,7 +44,7 @@ public class AlmacenController {
     public String RegistrarAlmacen(
         @ModelAttribute("almacen") AlmacenEntity almacenEntity) {
         servicio.add(almacenEntity);
-        return "redirect:/almacen/mostrar/custom";
+        return "redirect:/almacen/mostrar";
     }
 
     
@@ -59,7 +59,7 @@ public class AlmacenController {
     public String ActualizarAlmacen(@PathVariable Long id,
             @ModelAttribute("almacen") AlmacenEntity a) {
         servicio.update(a);
-        return "redirect:/almacen/mostrar/custom";
+        return "redirect:/almacen/mostrar";
     }
     
     @GetMapping("/almacen/eliminar/{id}")
@@ -73,7 +73,7 @@ public class AlmacenController {
     public String EliminarAlmacen(@PathVariable Long id,
             @ModelAttribute("almacen") AlmacenEntity a) {
         servicio.delete(a);
-        return "redirect:/almacen/mostrar/custom";
+        return "redirect:/almacen/mostrar";
     }
     
     @ModelAttribute("almacen")
@@ -86,14 +86,14 @@ public class AlmacenController {
     public String HabilitarRol(@PathVariable Long id) {
         AlmacenEntity objalmacen = servicio.findById(id).get();
         servicio.enable(objalmacen);
-        return "redirect:/almacen/mostrar/custom";
+        return "redirect:/almacen/mostrar";
     }
     
         @GetMapping("/almacen/deshabilitar/{id}")
     public String DeshabilitarRol(@PathVariable Long id) {
         AlmacenEntity objalmacen = servicio.findById(id).get();
         servicio.delete(objalmacen);
-        return "redirect:/almacen/mostrar/custom";
+        return "redirect:/almacen/mostrar";
     }
     
 }

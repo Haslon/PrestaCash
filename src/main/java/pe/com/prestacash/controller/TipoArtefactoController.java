@@ -68,7 +68,7 @@ public class TipoArtefactoController {
     public String RegistrarTipoArtefacto(
             @ModelAttribute("tipoartefacto") TipoArtefactoEntity ta) {
         servicio.add(ta);
-        return "redirect:/tipoartefacto/mostrar/custom";
+        return "redirect:/tipoartefacto/mostrar";
     }
 
     @PostMapping("/tipoartefacto/actualizar/{id}")
