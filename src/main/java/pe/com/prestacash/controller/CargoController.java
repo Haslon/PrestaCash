@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import pe.com.prestacash.model.CargoEntity;
 import pe.com.prestacash.service.CargoService;
 
-/**
- *
- * @author User
- */
+
 @Controller
 public class CargoController {
 
