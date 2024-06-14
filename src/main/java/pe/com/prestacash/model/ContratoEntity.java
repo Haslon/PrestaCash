@@ -3,6 +3,9 @@ package pe.com.prestacash.model;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import pe.com.prestacash.model.base.BaseEntity;
@@ -25,10 +28,12 @@ public class ContratoEntity extends BaseEntity implements Serializable {
 
     @Column(name = "fecha_inicio")
     @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechainicio;
 
     @Column(name = "fecha_fin")
     @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechafin;
 
     @ManyToOne
@@ -39,4 +44,3 @@ public class ContratoEntity extends BaseEntity implements Serializable {
     @JoinColumn(name = "cod_empleado", nullable = false)
     private EmpleadoEntity empleado;
 }
-

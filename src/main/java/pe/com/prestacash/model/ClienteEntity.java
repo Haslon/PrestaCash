@@ -85,4 +85,3 @@ public class ClienteEntity extends BaseEntity implements Serializable {
     
  
 }
-
