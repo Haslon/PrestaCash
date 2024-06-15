@@ -12,7 +12,8 @@
 <body>
     <div class="container">
         <!-- creamos un fragmento para el menu -->
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" th:fragment="nav">
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary w-full" style="width: 100vw;" data-bs-theme="dark"
+            th:fragment="nav">
             <div class=" container-fluid">
                 <a class="navbar-brand" href="#">Presta Cash</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,8 +59,8 @@
         </nav>
 
         <!-- creamos un fragmento para el footer -->
-        <footer th:fragment="footer">
-            <p>Sistema Web PrestaCash - Mario Antonio Huapalla Morales</p>
+        <footer class="absolute bottom-0" style="position: absolute;" th:fragment="footer">
+            <p>Sistema Web PrestaCash - Esclender Antonio Lugo Silva</p>
         </footer>
         <!-- Cerramos el fragmento -->
     </div>
