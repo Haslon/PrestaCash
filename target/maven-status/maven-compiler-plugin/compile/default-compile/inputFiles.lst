@@ -22,6 +22,7 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\DistritoController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\EmpleadoController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\model\ContratoEntity.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\TipoArtefactoRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\model\DistritoEntity.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\EmpleadoRepository.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\ClienteService.java
@@ -49,3 +50,4 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\TipoDocumentoServiceImpl.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\model\ClienteEntity.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\TipoDocumentoController.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\ArtefactoRestController.java
