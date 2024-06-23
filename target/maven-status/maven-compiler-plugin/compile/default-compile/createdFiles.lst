@@ -17,6 +17,7 @@ pe\com\prestacash\repository\ArtefactoRepository.class
 pe\com\prestacash\model\ContratoEntity$ContratoEntityBuilderImpl.class
 pe\com\prestacash\model\DistritoEntity$DistritoEntityBuilder.class
 pe\com\prestacash\model\AlmacenEntity.class
+pe\com\prestacash\restcontroller\TipoArtefactoRestController.class
 pe\com\prestacash\model\base\BaseEntity$BaseEntityBuilder.class
 pe\com\prestacash\model\ClienteEntity$ClienteEntityBuilderImpl.class
 pe\com\prestacash\model\ContratoEntity$ContratoEntityBuilder.class
@@ -38,6 +39,7 @@ pe\com\prestacash\service\impl\CargoServiceImpl.class
 pe\com\prestacash\service\TipoArtefactoService.class
 pe\com\prestacash\model\ArtefactoEntity$ArtefactoEntityBuilderImpl.class
 pe\com\prestacash\service\TipoDocumentoService.class
+pe\com\prestacash\restcontroller\ArtefactoRestController.class
 pe\com\prestacash\model\TipoArtefactoEntity$TipoArtefactoEntityBuilderImpl.class
 pe\com\prestacash\model\ContratoEntity.class
 pe\com\prestacash\service\impl\TipoArtefactoServiceImpl.class

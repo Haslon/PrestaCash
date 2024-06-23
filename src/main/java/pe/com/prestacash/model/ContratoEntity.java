@@ -26,21 +26,21 @@ public class ContratoEntity extends BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "fecha_inicio")
+    @Column(name = "fecha_init")
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechainicio;
 
-    @Column(name = "fecha_fin")
+    @Column(name = "fecha_end")
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechafin;
 
     @ManyToOne
-    @JoinColumn(name = "cod_cliente", nullable = false)
+    @JoinColumn(name = "codcli", nullable = false)
     private ClienteEntity cliente;
 
     @ManyToOne
-    @JoinColumn(name = "cod_empleado", nullable = false)
+    @JoinColumn(name = "codemple", nullable = false)
     private EmpleadoEntity empleado;
 }

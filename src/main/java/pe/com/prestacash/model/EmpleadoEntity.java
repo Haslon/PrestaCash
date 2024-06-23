@@ -23,53 +23,53 @@ public class EmpleadoEntity extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "cod_empleado")
+    @Column(name = "cod_emple")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nom_empleado")
+    @Column(name = "nom_emple")
     @NotEmpty
     @Size(min = 2, max = 50, message = "El nombre tiene que estar entre {min} y {max} caracteres")
     private String nombre;
 
-    @Column(name = "apell_paterno_empleado")
+    @Column(name = "apep_emple")
     @NotEmpty
     @Size(min = 2, max = 50, message = "El apellido paterno tiene que estar entre {min} y {max} caracteres")
     private String apellidopaterno;
 
-    @Column(name = "apell_materno_empleado")
+    @Column(name = "apem_emple")
     @NotEmpty
     @Size(min = 2, max = 50, message = "El apellido materno tiene que estar entre {min} y {max} caracteres")
     private String apellidomaterno;
 
-    @Column(name = "doc_empleado")
+    @Column(name = "doc_emple")
     @NotEmpty
     @Size(min = 8, max = 15, message = "El número de documento tiene que estar entre {min} y {max} caracteres")
     private String numerodocumento;
 
     
-    @Column(name = "fecha_empleado")
+    @Column(name = "fec_emple")
     private LocalDate fechanacimiento;
 
-    @Column(name = "dire_empleado")
+    @Column(name = "dire_emple")
     @NotEmpty
     @Size(min = 5, max = 100, message = "La dirección tiene que estar entre {min} y {max} caracteres")
     private String direccion;
 
-    @Column(name = "telefono_empleado")
+    @Column(name = "tel_emple")
     @Size(max = 15, message = "El teléfono puede tener hasta {max} caracteres")
     private String telefono;
 
-    @Column(name = "celular_empleado")
+    @Column(name = "cel_emple")
     @Size(max = 15, message = "El celular puede tener hasta {max} caracteres")
     private String celular;
 
-    @Column(name = "correo_empleado")
+    @Column(name = "correo_emple")
     @NotEmpty
     @Email(message = "El correo debe ser válido")
     private String correo;
 
-    @Column(name = "sexo_empleado")
+    @Column(name = "sex_emple")
     @NotEmpty
     @Size(min = 1, max = 1, message = "El sexo debe ser 'M' o 'F'")
     private String sexo;

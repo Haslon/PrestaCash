@@ -46,7 +46,7 @@ public class EmpleadoController {
     
 
     @GetMapping("/empleado/registrar")
-    public String mostrarRegistrarEmpleado(Model model) {
+    public String MostrarRegistrarEmpleado(Model model) {
         model.addAttribute("distritos", distritoService.findAllCustom());
         model.addAttribute("tipodocumentos", tipoDocumentoService.findAllCustom());
         model.addAttribute("cargos", cargoService.findAllCustom());
@@ -86,7 +86,7 @@ public class EmpleadoController {
     }
 
     @PostMapping("/empleado/actualizar/{id}")
-    public String MostrarActualizarEmpleado(@PathVariable Long id,
+    public String ActualizarEmpleado(@PathVariable Long id,
             @ModelAttribute("empleado") EmpleadoEntity a) {
         empleadoService.update(a);
         return "redirect:/empleado/mostrar";
