@@ -31,5 +31,6 @@ public class DistritoEntity extends BaseEntity implements Serializable {
     @NotEmpty
     @Size(min = 2, max = 100, message = "El nombre tiene que estar entre {min} y {max} caracteres")
     private String nombre;  
+    
 }
 
