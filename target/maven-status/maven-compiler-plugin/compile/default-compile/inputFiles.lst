@@ -2,6 +2,7 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\config\WebConfig.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\TipoArtefactoServiceImpl.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\ArtefactoRepository.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\ClienteRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\ClienteController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\TipoDocumentoRepository.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\DistritoService.java
@@ -20,6 +21,7 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\ArtefactoService.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\PrestaCashApplication.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\ClienteRepository.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\DistritoRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\TipoDocumentoService.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\DistritoRepository.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\DistritoController.java
@@ -42,6 +44,7 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\CargoController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\UsuarioRepository.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\DistritoServiceImpl.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\ContratoRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\RolServiceImpl.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\repository\CargoRepository.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\ArtefactoServiceImpl.java
@@ -56,7 +59,10 @@ I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestac
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\model\AlmacenEntity.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\AlmacenService.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\EmpleadoService.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\AlmacenRestController.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\CargoRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\service\impl\TipoDocumentoServiceImpl.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\model\ClienteEntity.java
+I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\EmpleadoRestController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\controller\TipoDocumentoController.java
 I:\CERTUS\CICLO IV\JAVA WEB\Laboratorio1\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\ArtefactoRestController.java

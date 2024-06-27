@@ -13,7 +13,7 @@ import pe.com.prestacash.service.ArtefactoService;
 @RestController
 @RequestMapping("/artefacto")
 public class ArtefactoRestController {
-      @Autowired
+    @Autowired
     private ArtefactoService servicio;
 
     @GetMapping
