@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.AlmacenEntity;
-import pe.com.prestacash.service.AlmacenService;
-import pe.com.prestacash.service.ArtefactoService;
+import pe.com.prestacash.model.gestion.AlmacenEntity;
+import pe.com.prestacash.service.gestion.AlmacenService;
+import pe.com.prestacash.service.gestion.ArtefactoService;
 
 @Controller
 public class AlmacenController {

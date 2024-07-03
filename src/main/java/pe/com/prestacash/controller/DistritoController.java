@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import pe.com.prestacash.model.DistritoEntity;
-import pe.com.prestacash.model.TipoArtefactoEntity;
-import pe.com.prestacash.service.DistritoService;
+import pe.com.prestacash.model.gestion.DistritoEntity;
+import pe.com.prestacash.model.gestion.TipoArtefactoEntity;
+import pe.com.prestacash.service.gestion.DistritoService;
 
 @Controller
 public class DistritoController {

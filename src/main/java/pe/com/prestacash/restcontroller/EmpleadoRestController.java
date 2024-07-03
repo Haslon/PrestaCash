@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pe.com.prestacash.model.EmpleadoEntity;
-import pe.com.prestacash.service.EmpleadoService;
+import pe.com.prestacash.model.gestion.EmpleadoEntity;
+import pe.com.prestacash.service.gestion.EmpleadoService;
 
 @RestController
 @RequestMapping("/empleado")

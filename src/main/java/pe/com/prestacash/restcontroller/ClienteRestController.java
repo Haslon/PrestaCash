@@ -7,8 +7,8 @@ package pe.com.prestacash.restcontroller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.ClienteEntity;
-import pe.com.prestacash.service.ClienteService;
+import pe.com.prestacash.model.gestion.ClienteEntity;
+import pe.com.prestacash.service.gestion.ClienteService;
 
 
 @RestController

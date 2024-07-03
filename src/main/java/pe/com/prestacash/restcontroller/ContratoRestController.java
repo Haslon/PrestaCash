@@ -3,8 +3,8 @@ package pe.com.prestacash.restcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.ContratoEntity;
-import pe.com.prestacash.service.ContratoService;
+import pe.com.prestacash.model.proceso.ContratoEntity;
+import pe.com.prestacash.service.proceso.ContratoService;
 
 import java.util.List;
 

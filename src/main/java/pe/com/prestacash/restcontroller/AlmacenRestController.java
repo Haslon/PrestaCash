@@ -4,8 +4,8 @@ package pe.com.prestacash.restcontroller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.AlmacenEntity;
-import pe.com.prestacash.service.AlmacenService;
+import pe.com.prestacash.model.gestion.AlmacenEntity;
+import pe.com.prestacash.service.gestion.AlmacenService;
 
 @RestController
 @RequestMapping("/almacen")

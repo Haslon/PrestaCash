@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import pe.com.prestacash.model.ClienteEntity;
-import pe.com.prestacash.model.ContratoEntity;
-import pe.com.prestacash.service.ClienteService;
-import pe.com.prestacash.service.ContratoService;
-import pe.com.prestacash.service.EmpleadoService;
+import pe.com.prestacash.model.gestion.ClienteEntity;
+import pe.com.prestacash.model.proceso.ContratoEntity;
+import pe.com.prestacash.service.gestion.ClienteService;
+import pe.com.prestacash.service.proceso.ContratoService;
+import pe.com.prestacash.service.gestion.EmpleadoService;
 
 @Controller
 public class ContratoController {

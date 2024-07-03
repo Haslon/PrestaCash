@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import pe.com.prestacash.model.UsuarioEntity;
-import pe.com.prestacash.service.UsuarioService;
+import pe.com.prestacash.model.gestion.UsuarioEntity;
+import pe.com.prestacash.service.gestion.UsuarioService;
 
 @Controller
 public class UsuarioController {

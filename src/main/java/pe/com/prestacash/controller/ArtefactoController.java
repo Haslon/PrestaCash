@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import pe.com.prestacash.model.ArtefactoEntity;
-import pe.com.prestacash.service.ArtefactoService;
-import pe.com.prestacash.service.TipoArtefactoService;
+import pe.com.prestacash.model.gestion.ArtefactoEntity;
+import pe.com.prestacash.service.gestion.ArtefactoService;
+import pe.com.prestacash.service.gestion.TipoArtefactoService;
 
 @Controller
 public class ArtefactoController {

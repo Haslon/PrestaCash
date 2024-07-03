@@ -7,8 +7,8 @@ package pe.com.prestacash.restcontroller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.ArtefactoEntity;
-import pe.com.prestacash.service.ArtefactoService;
+import pe.com.prestacash.model.gestion.ArtefactoEntity;
+import pe.com.prestacash.service.gestion.ArtefactoService;
 
 @RestController
 @RequestMapping("/artefacto")

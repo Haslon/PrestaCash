@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pe.com.prestacash.model.ClienteEntity;
-import pe.com.prestacash.service.ClienteService;
-import pe.com.prestacash.service.TipoDocumentoService;
-import pe.com.prestacash.service.DistritoService;
+import pe.com.prestacash.model.gestion.ClienteEntity;
+import pe.com.prestacash.service.gestion.ClienteService;
+import pe.com.prestacash.service.gestion.TipoDocumentoService;
+import pe.com.prestacash.service.gestion.DistritoService;
 
 @Controller
 public class ClienteController {
