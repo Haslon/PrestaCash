@@ -8,5 +8,5 @@ import pe.com.prestacash.repository.base.BaseRepository;
 public interface UserRepository extends BaseRepository<UserEntity, Long> {
 
     //como el correo se utilizara para validar se buscar por correo
-     UserEntity findByUserName(String user);
+     UserEntity findByUsername(String user);
 }

@@ -22,8 +22,14 @@ public class AuthenticationRestController {
 
     @PostMapping("/signin")
     public ResponseEntity<JwtAuthenticationDTOResponse> signin(@RequestBody SigninDTORequest request) {
-        log.info("signin ...");
-        return ResponseEntity.ok(authenticationService.signin(request));
+        try{
+            log.info("signin ...");
+            log.info(request.toString());
+            return ResponseEntity.ok(authenticationService.signin(request));
+        }catch (Exception e) {
+            log.error(null, e);
+            return ResponseEntity.ok(null);
+        }
     }
 
     @PostMapping("/signin-header")
@@ -32,7 +38,7 @@ public class AuthenticationRestController {
         log.info("signin ...");
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.set("Authorization", "Bearer " + authenticationService.signin(request).getToken());
-
         return ResponseEntity.ok().headers(responseHeaders).build();
+
     }
 }
