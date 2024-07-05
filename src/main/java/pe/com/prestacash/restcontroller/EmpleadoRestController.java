@@ -16,7 +16,7 @@ import pe.com.prestacash.service.gestion.EmpleadoService;
 @RestController
 @RequestMapping("/empleado")
 public class EmpleadoRestController {
-        @Autowired
+    @Autowired
     private EmpleadoService servicio;
 
     @GetMapping
