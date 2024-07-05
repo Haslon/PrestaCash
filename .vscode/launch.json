@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-PrestaCashApplication<PrestaCash>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "pe.com.prestacash.PrestaCashApplication",
+      "projectName": "PrestaCash",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
