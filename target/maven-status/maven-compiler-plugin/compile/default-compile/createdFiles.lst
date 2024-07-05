@@ -9,6 +9,7 @@ pe\com\prestacash\model\gestion\DistritoEntity$DistritoEntityBuilder.class
 pe\com\prestacash\model\gestion\ClienteEntity.class
 pe\com\prestacash\controller\InicioController.class
 pe\com\prestacash\model\gestion\EmpleadoEntity$EmpleadoEntityBuilderImpl.class
+pe\com\prestacash\restcontroller\AuthenticationController.class
 pe\com\prestacash\service\impl\seguridad\AuthenticationServiceImpl.class
 pe\com\prestacash\model\gestion\DistritoEntity$DistritoEntityBuilderImpl.class
 pe\com\prestacash\restcontroller\CargoRestController.class
@@ -18,6 +19,7 @@ pe\com\prestacash\repository\seguridad\RoleRepository.class
 pe\com\prestacash\model\seguridad\jwt\SigninDTORequest$SigninDTORequestBuilder.class
 pe\com\prestacash\service\impl\gestion\AlmacenServiceImpl.class
 pe\com\prestacash\model\gestion\ArtefactoEntity.class
+pe\com\prestacash\util\PasswordEncrypt.class
 pe\com\prestacash\restcontroller\TipoArtefactoRestController.class
 pe\com\prestacash\repository\seguridad\UserRepository.class
 pe\com\prestacash\model\gestion\RolEntity$RolEntityBuilder.class

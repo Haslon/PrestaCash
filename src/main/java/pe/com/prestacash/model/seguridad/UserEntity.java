@@ -26,9 +26,9 @@ public class UserEntity {
     private Long id;
 
     @Column(name = "user_name")
-    private String userName;
+    private String username;
 
-    @Column(name = "user_mail")
+    @Column(name = "user_email")
     private String email;
 
     @Column(name = "password")
@@ -46,4 +46,3 @@ public class UserEntity {
         @JoinColumn(name = "role_id")})
     private Set<RoleEntity> roles = new HashSet<>();
 }
-

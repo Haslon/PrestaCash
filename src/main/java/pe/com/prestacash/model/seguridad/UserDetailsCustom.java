@@ -34,7 +34,7 @@ public class UserDetailsCustom implements UserDetails{
         //en esta parte se decide como se va a loguear con
         //usuario o con correo
         //return userEntity.getEmail();
-        return userEntity.getUserName();
+        return userEntity.getUsername();
     }
 
     @Override
@@ -58,6 +58,6 @@ public class UserDetailsCustom implements UserDetails{
     }
 
     public User getUserDetails() {
-        return new User(userEntity.getUserName(), userEntity.getPassword(), this.getAuthorities());
+        return new User(userEntity.getUsername(), userEntity.getPassword(), this.getAuthorities());
     }
 }

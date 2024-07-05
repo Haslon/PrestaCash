@@ -31,6 +31,7 @@ D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\model\gestion\Emplea
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\repository\seguridad\UserRepository.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\service\impl\gestion\TipoArtefactoServiceImpl.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\service\impl\gestion\UsuarioServiceImpl.java
+D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\util\PasswordEncrypt.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\service\impl\gestion\AlmacenServiceImpl.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\controller\EmpleadoController.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\CargoRestController.java
@@ -56,6 +57,7 @@ D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\service\impl\gestion
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\controller\ContratoController.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\model\seguridad\SecurityConstant.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\model\gestion\UsuarioEntity.java
+D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\AuthenticationController.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\model\seguridad\RoleEntity.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\repository\base\BaseRepository.java
 D:\Proyecto JAVA\PrestaCash\src\main\java\pe\com\prestacash\restcontroller\EmpleadoRestController.java
